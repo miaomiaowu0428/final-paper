@@ -4,7 +4,7 @@
 
 
 
-#show heading: set text(font: ("簡宋","Times New Roman"));
+#show heading: set text(font: ("SimHei","Times New Roman"));
 #set heading(numbering: "1.1")
 #show heading: content => [#content]
 #show heading.where(level: 1): content => [
@@ -64,7 +64,7 @@
 #pagebreak()
 #Center[#strong[普通本科生毕业论文（设计）诚信承诺书]]
 
-#align(center)[#set text(font: ("簡宋","Times New Roman"),size: 12pt);#table(
+#align(center)[#set text(font: ("SimSun","Times New Roman"),size: 12pt);#table(
   stroke: 0.6pt,
   columns: (15.85%, 15.64%, 11.93%, 18.86%, 14.98%, 22.75%),
   align: (center,auto,center,center,center,auto,),
@@ -111,7 +111,7 @@ Zino 框架的开发效率、降低开发成本，还能保障 Web
 项目的安全性和稳定性，对推动 Rust 语言在 Web
 开发领域的应用具有重要意义。
 
-#[ #set text(font: "Hei");
+#[ #set text(font: "SimHei");
   【关键词】
   ]脚手架工具 CI/CD Rust语言 Zino框架]
 
@@ -203,7 +203,7 @@ Web开发框架上手难度偏高的问题。Zino具有简洁的Api设计，使�
 
 #Text[clap-rs是Rust语言中一款强大的命令行参数解析库。它能让开发者轻松定义、解析复杂的命令行参数和选项。支持子命令、参数验证、自动生成帮助信息等功能，API简洁易用，有效提升了Rust项目处理终端命令的效率与灵活性。
 
-选取clap-rs做为构建cli工具的原因：]
+选取clap-rs构建cli工具的原因：]
 ==== 声明式API设计
 
 #Text[clap-rs的优势在于通过Rust的宏机制实现了声明式的参数定义。只需在结构体上标注`#[derive(Parser)]`即可自动按照结构生成命令行参数解析器。通过在结构体内字段上标注`#[arg()]`并填入short，long等参数定义选项或参数功能或默认值等细节。使用时仅需一条match表达式即可接入实际业务逻辑。使用clap-rs无需了解命令行参数解析的具体细节即可快速搭建命令行程序。]
